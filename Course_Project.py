@@ -14,10 +14,7 @@ def notmain(city):
   response = requests.get(url)
   unformated_data = response.json()
 
-  try:
-    print("You have succesfully connected to")
-  except Exception:
-    print("you did not connect to the website, please try again.")
+
 
   url =f"{base_url}?q={city}&units=imperial&APPID={appid}"
   print(url)
